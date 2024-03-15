@@ -1,0 +1,215 @@
+:root{
+    --ColorAzul: #2070d8;
+    --ColorInputs: #f3f3f5;
+    --ColorLetraInputs: #696969;
+    --ColorBordes: #e4e4e4;
+    --ColorNoti: #fcfde4;
+    --ColorLetraNoti: #4153bd;
+    --ColorLetraCuenta: #0b0b0b;
+    --BordesCrearCuenta: #d3d3d3;
+    --ColorMeta: #9a9a9a;
+    --ColorLetraIdioma: #abb0c0;
+    --Montserrat: "Montserrat", sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+
+.Cont-Face{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 45px 55px 140px 35px 40px 50px 1fr;
+}
+.Notificacion{
+    background-color: var(--ColorNoti);
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.Icono{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Icono img{
+    position: relative;
+    top: 2px;
+    width: 30px;
+}
+.Notifica{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-family: var(--Montserrat);
+    font-weight: 500;
+    font-size: 12px;
+    padding-right: 10px;
+    color: var(--ColorLetraNoti);
+}
+.Notifica p{
+    position: relative;
+    top: 6px;
+}
+.Titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Titulo img{
+    width: 125px;
+}
+.Formulario{
+    display: grid;
+    grid-template-rows: 40px 40px 40px;
+    row-gap: 7px;
+    padding: 0 15px;
+}
+.Formulario .Inputs{
+    border-radius: 5px;
+    border: none;
+    background-color: var(--ColorInputs);
+    font-family: var(--Montserrat);
+    font-size: 12px;
+    padding: 15px;
+    outline: none;
+    box-shadow: 1px 0px 0px 1px var(--ColorBordes);
+    border-bottom: 1px solid rgb(167, 167, 167);
+}
+.Formulario .Inputs::placeholder{
+    color: var(--ColorLetraInputs);
+    font-weight: 500;
+}
+.Formulario .Button{
+    position: relative;
+    top: 0px;
+    background-color: var(--ColorAzul);
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: var(--Montserrat);
+    font-weight: 600;
+    color: #FFFFFF;
+    border: none;
+}
+.Olvido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.Olvido a{
+    text-decoration: none;
+    font-size: 11px;
+    font-family: var(--Montserrat);
+    font-weight: 600;
+    color: #4269d4;
+}
+.Cont-Linea{
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+}
+.Linea{
+    position: relative;
+    padding: 0 10px;
+}
+.Linea::after{
+    content: '';
+    position: absolute;
+    left: 10px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 85%;
+    height: 1px;
+    background-color: #d1cfcf;
+}
+.Linea2::after{
+    left: 0px;
+}
+.Cont-Linea p{
+    position: relative;
+    top: -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--Montserrat);
+    color: #696969;
+}
+.Boton-Crear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Boton-Crear button{
+    background-color: #1a78f4;
+    width: 70%;
+    height: 34px;
+    border-radius: 5px;
+    border: 1px solid #838282;
+    background-color: transparent;
+    font-family: var(--Montserrat);
+    font-size: 11px;
+    font-weight: 700;
+}
+.Final{
+    position: relative;
+    
+}
+.Final-Footer{
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    height: 100px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.Espanol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.Cont-Espanol{
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+}
+.Cont-Espanol p{
+    text-align: center;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: var(--Montserrat);
+    color: var(--ColorLetraNoti);
+}
+.Cont-Espanol p:nth-child(1){
+    font-weight: 600;
+    color: #696969;
+    padding-bottom: 5px;
+}
+.ingles{
+}
+.Meta{
+    grid-column: 1 / end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8d8c8c;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: var(--Montserrat);
+    padding-bottom: 30px;
+}
+
+.Ingles{
+    position: relative;
+    top: 9.5px;
+}
